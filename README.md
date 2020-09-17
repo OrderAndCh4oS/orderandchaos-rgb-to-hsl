@@ -1,13 +1,12 @@
 # RGB to HSL and back again...
 
-run `npm install`
-
-run `npm run build`
+run `npm install @orderandchaos/rgb-to-hsl`
 
 ## Example
 
 ```typescript
 import RgbToHsl from "@orderandchaos/rgb-to-hsl";
+
 const rgbToHsl = new RgbToHsl();
 rgbToHsl.fromRgbHex(0x0000ff)
 
