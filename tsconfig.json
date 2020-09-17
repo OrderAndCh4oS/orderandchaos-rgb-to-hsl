@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "outDir": "lib",
+    "target": "esnext",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "strict": true,
+    //"jsx": "react",
+    //"allowJs": true,
+    "sourceMap": true,
+    "inlineSources": true,
+    "types": ["node", "jest"],
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "declaration": true
+  },
+  "exclude": ["node_modules", "lib"]
+}
