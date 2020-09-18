@@ -1,6 +1,6 @@
 {
   "name": "@orderandchaos/rgb-to-hsl",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -15,7 +15,8 @@
     "build:types": "tsc --emitDeclarationOnly",
     "build:js": "babel src --out-dir lib --extensions \".ts,.tsx\" --source-maps inline",
     "type-check": "tsc --noEmit",
-    "test": "ts-jest"
+    "test": "ts-jest",
+    "prepare": "npm run build"
   },
   "author": "Sean Cooper",
   "license": "MIT",
