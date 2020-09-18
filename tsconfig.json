@@ -14,5 +14,5 @@
     "experimentalDecorators": true,
     "declaration": true
   },
-  "exclude": ["node_modules", "lib"]
-}
+  "files": ["src/index.ts"],
+  "exclude": ["node_modules", "lib", "tests", "data"]}
