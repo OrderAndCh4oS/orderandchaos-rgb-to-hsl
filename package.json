@@ -1,12 +1,19 @@
 {
   "name": "@orderandchaos/rgb-to-hsl",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
-  "main": "src/index.js",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "source": "src/index.ts",
+  "files": [
+    "lib"
+  ],
   "scripts": {
     "script": "node lib/index.js",
     "watch": "babel src --out-dir lib --extensions \".ts,.tsx\" --source-maps inline --watch",
-    "build": "babel src --out-dir lib --extensions \".ts,.tsx\" --source-maps inline",
+    "build": "npm run build:types && npm run build:js",
+    "build:types": "tsc --emitDeclarationOnly",
+    "build:js": "babel src --out-dir lib --extensions \".ts,.tsx\" --source-maps inline",
     "type-check": "tsc --noEmit",
     "test": "ts-jest"
   },
